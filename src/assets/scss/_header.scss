@@ -1,0 +1,22 @@
+.search {
+    width: 389px;
+    input {
+        height: 50px;
+    }
+    button {
+        top: 7px;
+        right: 9px;
+    }
+}
+
+.lang {
+    img {
+        transition: all 0.3s ease-out;
+    }
+    .rotate-180 {
+        transform: rotate(180deg);
+    }
+}
+.log {
+    width: 100px;
+}

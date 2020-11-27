@@ -1,0 +1,24 @@
+body {
+    font-family: "Avenir Next Cyr";
+}
+@media (min-width: 1500px) {
+    .container {
+        width: 1440px;
+    }
+}
+.btn-primary {
+    background-color: $base-color;
+    border: $base-color;
+}
+.rounded-2 {
+    border-radius: 2px;
+}
+.rounded-4 {
+    border-radius: 4px;
+}
+.border-grey {
+    border-color: $border-color;
+}
+.cursor-pointer {
+    cursor: pointer;
+}

@@ -1,0 +1,132 @@
+.hero {
+    &__container-left {
+        background: linear-gradient(130.14deg, #2bbb97 45.98%, #25aef6 91.19%);
+        border-radius: 4px 0px 0px 4px;
+        min-height: 600px;
+    }
+    &__container-right {
+        .overlay {
+            padding: 0 0 55px 52px;
+        }
+    }
+    &__img {
+        max-width: 600px;
+        width: 100%;
+    }
+    &__wrapper {
+        position: relative;
+        .overlay {
+            background: rgba(58, 89, 120, 0.8);
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            position: absolute;
+        }
+    }
+}
+.modal-content {
+    background-color: transparent;
+    border: none;
+}
+.modal-header {
+    border-bottom: none;
+    padding: 0;
+    button:focus {
+        outline: none;
+    }
+}
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 70%;
+    }
+}
+.slick-slide img {
+    display: inline-block;
+}
+.slick-next:before,
+.slick-prev:before {
+    content: none;
+}
+.slick-next .next-slick-arrow:before {
+    background-color: #fff;
+    transition: all 0.3s ease-out;
+    width: 60px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    content: url(../images/arrow-next-green.svg);
+}
+.hover.next-slick-arrow:before {
+    background-color: #2bbb97;
+    transition: all 0.3s ease-out;
+    width: 60px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    content: url(../images/arrow-next.svg);
+}
+.slick-prev .prev-slick-arrow:before {
+    background-color: #fff;
+    transition: all 0.3s ease-out;
+    width: 60px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    content: url(../images/arrow-prev-green.svg);
+}
+.hover.prev-slick-arrow:before {
+    background-color: #2bbb97;
+    content: url(../images/arrow-prev.svg);
+}
+.slick-prev {
+    left: -82px;
+}
+.slick-next {
+    right: -45px;
+}
+.image-big {
+    max-height: 500px;
+    object-fit: cover;
+    width: 100%;
+}
+.thumbnail-slider-wrap {
+    margin-top: 15px;
+    height: auto;
+    .slick-next {
+        right: 42px;
+    }
+    .slick-prev {
+        left: 13px;
+        z-index: 2;
+    }
+    .slick-next .next-slick-arrow:before {
+        width: 40px;
+        height: 40px;
+    }
+    .slick-prev .prev-slick-arrow:before {
+        width: 40px;
+        height: 40px;
+    }
+}
+.thumbnail-slider-wrap .slick-track .slick-slide {
+    text-align: center;
+}
+.thumbnail-slider-wrap .slick-track .slick-slide img {
+    width: 90%;
+}
+
+.table td,
+.table th {
+    border-top: none;
+    border-bottom: 1px solid #dee2e6;
+}
+p:first-letter {
+    color: red; /* Красный цвет первой буквы */
+}
